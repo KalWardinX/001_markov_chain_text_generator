@@ -1,7 +1,7 @@
 #include "data.h"
 
 int transition_diag::get_pos(std::string s){
-return m.find(s)->second;
+    return m.find(s)->second;
 }
 
 void transition_diag::insert_map(std::string key){
