@@ -28,4 +28,5 @@ class transition_diag{
         void insert_graph(int , std::string );
     public:
         void insert(std::string, std::string);
+        table generate();
 };
