@@ -37,6 +37,13 @@ void generate(table& lookup, std::string s, int n){
 
 
 int main(int argc , char** argv){
+    if(argc <= 3 || argc < 3+atoi(argv[2])){
+        std::cout << "./markov.out <par 1> <par 2> <pars 3>\n\
+    -> par1 => number of words to be generated\n\
+    -> par2 => number of words to decide next state\n\
+    -> par3 => enter 'par2' words\n";
+        exit(1);
+    }
     
     int num = std::atoi(argv[1]);
     int k = std::atoi(argv[2]);
