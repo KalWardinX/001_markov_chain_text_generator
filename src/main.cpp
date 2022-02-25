@@ -3,6 +3,8 @@
 #include "data.h"
 #include <filesystem>
 #include <istream>
+#include <time.h>
+
 std::string get_new_string(std::string s, std::string ins){
     std::string result;
     std::string word;
@@ -52,6 +54,7 @@ int main(int argc , char** argv){
         }
         init+=temp+" ";
     }
+    srand(time(0));
 
     transition_diag t;
     std::string inp_dir = "./input";
@@ -83,7 +86,8 @@ int main(int argc , char** argv){
     }
 
     table lookup = t.generate();
-    std::cout << init<< " ";
+    std::cout << init << " ";
     generate(lookup,init,num-k);
+    std::cout << std::endl;
     return 0;
 }

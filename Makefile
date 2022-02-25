@@ -1,7 +1,7 @@
 SRC := ./src
 OBJ := ./obj
 CC := g++
-CFLAGS := --std=c++17 -g
+CFLAGS := --std=c++17
 all: markov.out
 	@echo Success
 markov.out: $(OBJ)/table.o $(OBJ)/graph.o $(SRC)/main.cpp
