@@ -10,3 +10,7 @@
 * par1 => number of words to be generated
 * par2 => number of words to decide next state
 * par3 => enter "par2" words
+
+## Example
+`./markov.out 150 3 computer science the`
+
